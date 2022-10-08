@@ -1,0 +1,7 @@
+services:
+  app:
+    image: adduc/exercise-systemd:centos7
+    stop_signal: SIGKILL
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
